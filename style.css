@@ -61,12 +61,37 @@ main {
   background-color: #005fa3;
 }
 
+.cards{
+    display:flex;
+    justify-content: space-between;
+    gap:10px;
+}
+
 .card{
+    position: relative;
+    background: #9ab9e4;
+    border-radius: 10px;
+    padding: 20px;
     height:auto;
-    width: 600px;
+    width: 1000px;
+
     /*box-shadow: ;*/
 }
 
+.card p{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.card h1{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.image{
+    height: 200px;
+    width: 200px;
+}
 
 
 

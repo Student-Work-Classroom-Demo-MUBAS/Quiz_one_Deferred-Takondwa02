@@ -6,3 +6,9 @@
 // - Highlight clicked list item
 // - Clear highlights when "Clear" button is clicked
 // - Add new list items from form input without reloading the page
+
+
+let button = document.querySelector("button");
+button.addEventListener("click", function() {
+  alert("Button clicked!");
+});
