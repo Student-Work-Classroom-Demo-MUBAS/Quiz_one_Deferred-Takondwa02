@@ -65,6 +65,8 @@ main {
     display:flex;
     justify-content: space-between;
     gap:10px;
+    align-items: center;
+   
 }
 
 .card{
@@ -93,14 +95,44 @@ main {
     width: 200px;
 }
 
+ul {
+  list-style-type: disc;
+  padding-left: 1.2em;
+}
 
+ul li {
+  cursor: pointer;
+  padding: 0.3em 0.5em;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  margin-bottom: 0.3em;
+}
 
+/* Highlight clicked list item */
+ul li.highlighted {
+  background-color: #ffc107;
+  color: #222;
+  font-weight: bold;
+}
+
+/* Form for adding new items */
+#add-item-form {
+  margin-top: 1.5em;
+  display: flex;
+  gap: 0.5em;
+}
+
+#add-item-form input[type="text"] {
+  flex-grow: 1;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
 /* TODO: Task 2 - Use CSS Grid for card layout; stack cards vertically on screens <700px */
 
 /* TODO: Task 3 - Add styles for light/dark theme and animate background color transition */
 
 /* TODO: Task 4 - Add highlight class for list items */
 
-.class{
 
-}
