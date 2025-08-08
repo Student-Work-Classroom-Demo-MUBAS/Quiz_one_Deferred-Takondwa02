@@ -10,5 +10,23 @@
 
 let button = document.querySelector("button");
 button.addEventListener("click", function() {
-  alert("Button clicked!");
+    
 });
+
+
+// List item highlighting
+  $('#item-list').on('click', 'li', function () {
+    // Remove highlight from all
+    $('#item-list li').removeClass('highlighted');
+    // Highlight clicked item
+    $(this).addClass('highlighted');
+  });
+
+  $(document).ready(function () {
+  // Theme Toggle Button
+  $('#theme-toggle').on('click', function () {
+    $('body').toggleClass('dark-theme');
+    // Update aria-pressed attribute for accessibility
+    const isDark = $('body').hasClass('dark-theme');
+    $(this).attr('aria-pressed', isDark);
+  });
